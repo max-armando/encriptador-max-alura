@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+.encriptador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.proyecto {
+    display: flex;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1440px;
+    height: auto;
+    min-height: 700px;
+    padding: 10px 0;
+}
+
+.logo__alura {   
+    padding: 0px 0px 0px 0px;
+}
+
+.mensaje__entrada {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 650px;
+    height: 600px;
+    margin-left: 80px;
+    align-self: center;
+}
+
+.mensaje__entrada textarea {
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    resize: none;
+    border: none;
+}
+
+.mensaje__entrada textarea:focus {
+    outline: none;
+}
+
+.mensaje__salida {   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin-left: 100px;
+    width: 100%;
+    max-width: 425px;
+    height: 595px;
+    background-color: white;    
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.sin__texto {
+    margin-top: 800px;
+    margin-bottom: 100px;
+    padding: 0px 60px;
+}
+
+.sin__texto img {    
+    margin-bottom: 25px;
+}
+
+.sin__texto h2 {
+    font-size: 25px;
+}
+
+.area__copiar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 50px;
+    padding: 0px 30px;
+}
+
+.salida {
+    color: #495057;
+    resize: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 650px;
+    text-align: left;
+    margin-top: 90px;;
+    font-size: 24px;
+}
+
+
+.alerta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.alerta img {
+    width: 20px;
+    height: 20px;
+}
+
+.botones{  
+    display: flex;
+    gap: 20px;
+}
+
+.btn__encriptar {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    width: 332px;
+    height: 67px;
+    padding: 24px;
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+.btn__desencriptar {
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 20px;
+    width: 332px;
+    height: 67px;
+    padding: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.btn__copiar {
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 20px;
+    width: 332px;
+    height: 67px;
+    padding: 24px;
+    background: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer{
+    background-color: #0A3871 ;
+    padding: 24px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .logo__alura {
+        padding: 0px;
+        margin-right: 94%;
+    }
+
+    .proyecto {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mensaje__entrada {
+        align-self: inherit;
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensaje__salida {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .sin__texto {
+        margin-bottom: 50%;
+        margin: 20%;
+        padding: 30px;
+    }
+
+    .sin__texto img {
+        display: none;
+    }
+
+    .area__copiar{
+        margin-top: 40px;
+    }
+
+    .area__botones {
+        font-display: flex;
+        width: 100%;
+    }
+
+    .botones {        
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .btn__encriptar {
+        width: 100%
+    }
+
+    .btn__desencriptar {
+        width: 100%
+    }
+
+    .btn__copiar {
+        width: 250px
+    }
+
+    .footer{
+        font-size: auto (70%);
+    }
+
+}
+
+@media (max-width: 550px) {
+    .proyecto {
+        align-items: flex-start;
+    }
+
+    .botones {
+        justify-content: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

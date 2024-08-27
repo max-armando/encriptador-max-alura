@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <klin rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <selection class="encriptador">
+            <div class="proyecto">
+                <div class="logo__alura">
+                    <img src="./imagenes/Group 3.png" alt="logo de alura" />
+                </div>
+                <div class="mensaje__entrada">
+                    <textarea class="texto" autofocus maxlength="410" placeholder="Ingrese el texto aqui" ></textarea>
+                    <div class="area__botones">
+                        <div class="alerta">
+                            <img src="./imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamacion"/>
+                            <span id="informacion">Solo letras minúsculas y sin acentos</span>
+                        </div>
+                        <div class="botones">
+                            <button class="btn__encriptar">Encriptar</button>
+                            <button class="btn__desencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje__salida">
+                    <div class="area__copiar hidden">
+                        <textarea disabled class="salida"> </textarea>
+                        <button class="btn__copiar">Copiar</button>
+                    </div>
+                    <div class="sin__texto">
+                        <img src="./imagenes/Muñeco.png" alt="un joven con una lupa"/>
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+        </selection>
+    </body>
+    <footer class="footer">
+        <h3>Desarrollado por Max Armando, estudiante de Alura Latam</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</html>
